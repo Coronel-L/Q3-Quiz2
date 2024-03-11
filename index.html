@@ -4,63 +4,72 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- Include Bootsrap via CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-	<!-- Add JavaScript via CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	<title>Q3 Quiz2</title>
 	<style>
 	
-	/*	Add CSS here*/
+	body {
+			background-image: url(https://wallpapercave.com/wp/wp4016036.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: monospace;
+	}
+
+	.container {
+		background-color: #d9d9d9;
+		padding: 25px;
+		border-radius: 15px;
+		width: 1100px;
+	}
+
+	h1 {
+		color: #c72424;
+	}
 
 	</style>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg bg-dark"><!-- Add navbar class -->
+	<nav class="navbar navbar-expand-lg bg-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="Logo"> <!-- Add navbar-brand class -->
-			<img src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/documents/class-2441/folder-10710/1709855495-2921.png" class="rounded-circle" style="width: 100px;" id="brand">
+		<a class="navbar-brand" href="Logo">
+			<img src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/documents/class-2441/folder-10710/1709855495-2921.png" class="rounded-circle" style="width: 70px;" id="brand" alt="OB 9-Topaz Logo">
 		</a>
 	  
-	 <div class="collapse navbar-collapse" id="mynavbar">
-		<ul class="navbar-nav me-auto">
-		    <li class="nav-item"> <!-- Add nav-item class -->
-		    	<a class="nav-link text-secondary" href="#home">Home</a><!-- Add nav-link class -->
-		    </li>
-		    <li class="nav-item"> <!-- Add nav-item class -->
-		    	<a class="nav-link text-secondary" href="#movies">Movies</a> <!-- Add nav-link class -->
-		    </li>
-		    <li class="nav-item dropdown"> <!-- Add nav-item class -->
-		    	<a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown">Genre</a> <!-- Add nav-link class -->
-		    	<ul class="dropdown-menu">
-		    		<li><a class="dropdown-item" href="#">Comedy</a></li>
-		    		<li><a class="dropdown-item" href="#">Romance</a></li>
-		    		<li><a class="dropdown-item" href="#">Thriller</a></li>
-		    	</ul>
-		    </li>
-		   <li class="nav-item"> <!-- Add nav-item class --> 
-		    	<a class="nav-link text-secondary" href="#contact">Contact Us</a> <!-- Add nav-link class -->
-		    </li>
-		</ul>
-		<form class="d-flex">
-	        <input class="form-control me-2" type="text" placeholder="Search">
-	        <button class="btn btn-danger" type="button">Search</button>
-	    </form>
-	   </div>
+		<div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="navbar-nav me-auto">
+		    	<li class="nav-item">
+		    		<a class="nav-link text-light" href="#home">Home</a>
+		    	</li>
+			    <li class="nav-item">
+			    	<a class="nav-link text-light" href="#movies">Movies</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			    	<a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">Genre</a>
+			    	<ul class="dropdown-menu">
+			    		<li><a class="dropdown-item" href="#">Comedy</a></li>
+			    		<li><a class="dropdown-item" href="#">Drama</a></li>
+			    		<li><a class="dropdown-item" href="#">Romance</a></li>
+			    	</ul>
+			    </li>
+				<li class="nav-item">
+			    	<a class="nav-link text-light" href="#contact">Contact Us</a>
+			    </li>
+			</ul>
+		</div>
     </div>
 	</nav>
 
-	<!-- Home Page -->
 	<div id="home" class="container mt-3">
 		<h1>Welcome to Movie Review</h1>
 		<p>Welcome to our Movie Review website. Here, you can find reviews, ratings, and recommendations for the latest movies. Whether you're a cinephile or just looking for something to watch, we've got you covered!</p>
 		<p>Stay tuned for regular updates on new releases, top picks, and much more.</p>
 	</div>
 
-	<!-- Movies Page -->
 	<div id="movies" class="container mt-3 mb-3">
 		<h1>Latest Movies</h1>
 
@@ -81,7 +90,7 @@
 	        		<img src="https://m.media-amazon.com/images/M/MV5BNzM3NjE2MzktYTlkZC00OTQ0LWFjMmUtOTQ0NGExODY4YzE3XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg" class="card-img-top" alt="Four Sisters and a Wedding poster">
 			        <div class="card-body">
 						<h5 class="card-title">Four Sisters and a Wedding</h5>
-						<p class="card-text">Four sisters try to stop their younger brother's wedding; in the process, all discover resentments among one another.</p>
+						<p class="card-text">Four sisters try to stop their younger brother's wedding; in the process and as they interact, they face the feelings and issues they have kept buried for a long time.</p>
 			          	<a href="https://www.imdb.com/title/tt3008034/reviews?ref_=tt_urv" class="btn btn-danger">Read Review</a>
 					</div>
 				</div>
@@ -93,27 +102,24 @@
 			        <div class="card-body">
 						<h5 class="card-title">Unforgettable</h5>
 						<p class="card-text">Jasmine takes her newfound canine friend Happy on a journey to her grandmother in Baguio, where they face challenges and help strangers along the way.</p>
-			          	<a href="https://www.imdb.com/title/tt7502214/reviews?ref_=tt_urv" class="btn btn-danger">Read Review</a>
+			          	<a href="https://www.imdb.com/title/tt10857178/reviews?ref_=tt_urv" class="btn btn-danger">Read Review</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-
-
-	<!-- Contact Us Page -->
-	<div id="contact" class="container">
-	  <h2>Contact Us</h2>
-	  <p>If you have any questions, feedback, or suggestions, feel free to reach out to us:</p>
-	  <ul>
-	    <li>Email: info@moviereview.com</li>
-	    <li>Phone: 1-800-MOVIE-REVIEW</li>
-	    <li>Address: 123 Movie St., Greenhills, San Juan, Philippines</li>
-	  </ul>
 	</div>
 
-	
+
+	<div id="contact" class="container mt-3 mb-3">
+		<h1>Contact Us</h1>
+		<p>If you have any questions, feedback, or suggestions, feel free to reach out to us:</p>
+		<ul>
+	    	<li>Email: info@moviereview.com</li>
+	    	<li>Phone: 1-800-MOVIE-REVIEW</li>
+	    	<li>Address: 123 Movie St., Greenhills, San Juan, Philippines</li>
+		</ul>
+	</div>
+
 	<nav class="navbar navbar-expand-lg bg-dark">
 		<div class="container-fluid justify-content-center">
 	    	<form class="d-flex">
